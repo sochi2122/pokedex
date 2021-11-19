@@ -19,26 +19,13 @@
       <!-- ============ MAIN ============ -->
       <main>
         <div>
-          <h1>pokemon()</h1>
+          <h1>Poo()</h1>
           <ul>
             <% for(let i = 0; i < pokemon.length; i++) { %>
               <li><a href="/pokemon/<%=i%>"><%= pokemon[i].id %></a></li>
+            <% } %>
+          </ul>
 
-            </ul>
-            
-            <form action="/pokemon/<%=i; %>?_method=DELETE" method="POST"></form>
-
-            <form>
-
-            <input type="submit" value="DELETE" />
-          </form>
-        </li>
-        <% } %>
-      </ul>
-      
-      <nav>
-        <a href="/pokemon/new">Create a New Pokemon</a>
-      </nav>
     
       <!-- ============ FOOTER ============ -->
       <footer> 

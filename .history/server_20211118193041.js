@@ -10,21 +10,11 @@ const port = 3000
 
 app.use(express.static('public'))
 
-//include the method-override package
-const methodOverride = require('method-override');
-//...
-//after app has been defined
-//use methodOverride.  We'll be adding a query parameter to our delete form named _method
-app.use(methodOverride('_method'));
-
-
-
 
 
 app.get('/', (req, res) => {
-    tabTitle: 'Master Branch'
-
     res.render('index.ejs', { data: Pokemon });
+	
 })
 
 

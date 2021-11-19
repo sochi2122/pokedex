@@ -19,27 +19,22 @@
       <!-- ============ MAIN ============ -->
       <main>
         <div>
-          <h1>pokemon()</h1>
+          <h1>fooBar()</h1>
           <ul>
             <% for(let i = 0; i < pokemon.length; i++) { %>
-              <li><a href="/pokemon/<%=i%>"><%= pokemon[i].id %></a></li>
-
-            </ul>
-            
-            <form action="/pokemon/<%=i; %>?_method=DELETE" method="POST"></form>
-
-            <form>
-
-            <input type="submit" value="DELETE" />
-          </form>
-        </li>
-        <% } %>
-      </ul>
-      
-      <nav>
-        <a href="/pokemon/new">Create a New Pokemon</a>
-      </nav>
-    
+              <li><a href="/drinks/<%=i%>"><%= drinks[i].name %></a></li>
+            <% } %>
+          </ul>
+        </div>
+        <div>
+          <h1>fooD()</h1>
+          <ul>
+            <% for(let i = 0; i < food.length; i++) { %>
+              <li><a href="/food/<%=i%>"><%= food[i].name %></a></li>
+            <% } %>
+          </ul>
+        </div>
+      </main>
       <!-- ============ FOOTER ============ -->
       <footer> 
       
