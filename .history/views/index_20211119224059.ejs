@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <script defer src="/js/script.js"></script>
+    <title>Pokedex App</title>
+</head>
+<body>
+    <h1>Welcome to the Pokedex index!</h1>
+
+    <main>
+      <table class="u-full-width">
+
+
+
+    <a href="/pokemon/new">Create a new Pokemon</a>
+    
+    <% for(let i = 0; i < pokemon.length; i++) { %>
+       
+        <tr>
+           
+           
+            <td> Pokemon Number: <%= pokemon[i].id %> </td>
+
+<td> Name: <%= pokemon[i].name %> </td>
+<td>  
+    <img src= <%= pokemon[i].img %> <a/> </td>
+
+<td> Pokemon Type: <%= pokemon[i].type %> </td>
+
+<td> HP:  <%= pokemon[i].stats.hp %> </td> 
+
+<td> Attack:  <%= pokemon[i].stats.attack %> </td> 
+
+<td> Defense:  <%= pokemon[i].stats.defense %> </td> 
+
+<td>  Speed: <%= pokemon[i].stats.speed %> </td> 
+
+<td> Move:  <%= pokemon[i].moves.level[0].name %> </td> 
+
+
+<td>    
+    
+    <form action="/pokemon/<%= i %>?_method=DELETE" method="POST">
+        <input type="submit" value="DELETE" />
+        </form> 
+    </td>
+
+<td>   
+    
+    <a href="/pokemon/<%=i %>/edit" type="button" class="edit">Edit</a>
+
+</td>
+
+
+
+
+       </tr>
+       
+       
+       
+
+        <!-- AADd EDIT LINK HERE -->
+       
+        
+        <!-- ADD DELETE FORM HERE -->
+       
+       
+       
+    <% } %>
+
+
+      </table>
+    </main>
+
+
+<footer>
+
+    <a href="/" class="back-btn">go root</a>
+
+</footer>
+
+</body>
+</html>

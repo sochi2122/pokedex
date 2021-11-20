@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex App</title>
+</head>
+<body>
+
+
+    <h1>Pokemon Show Page</h1>
+    <a href="/pokemon">Back to Pokedex Index</a>
+    <h2> <%= foundPokemon.name %></h2>
+    
+
+    <img src= <%= pokemon[i].img %> <a/> </td>
+
+    <a img src= <%= pokemon.img %> <a/> 
+
+   
+    <h3> Pokemon Type: <%= pokemon.type %> </h3>
+<table>
+    <tr>
+<td> HP:  <%= pokemon.stats.hp %> </td> 
+
+<td> Attack:  <%= pokemon.stats.attack %> </td> 
+
+<td> Defense:  <%= pokemon.stats.defense %> </td> 
+
+<td>  Speed: <%= pokemon.stats.speed %> </td> 
+
+<td> Move:  <%= pokemon.moves.level[0].name %> </td> 
+    </tr>
+</table>
+
+   
+    
+</body>
+</html>
