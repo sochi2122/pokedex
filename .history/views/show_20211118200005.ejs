@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Item</title>
+    
+    <!-- ============= FONTS ============= -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Montserrat:300,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ============= STYLES ============= -->
+        
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/skeleton.css" />
+  
+  </head>
+  <body>
+
+    <%- include('./partials/header.ejs')%>
+
+    <div class="container">
+     
+      <main class="show-main">
+
+
+        <h1>Name / Category: </h1>
+        <h2> <%= foundBudget.name %> </h2>
+        
+        <br>
+
+        <h3>Date:</h3>
+        <h5><%= foundBudget.date %></h5>
+      
+        <br>
+
+        <h3>From:</h3>
+        <h5><%= foundBudget.from %></h5>
+
+        <br>
+
+        <h3>Amount:</h3>
+        <h5>$ <%= foundBudget.amount %></h5>
+
+        <br>
+
+        <h3>Tags:</h3>
+        <h5><%= foundBudget.tags %></h5>
+
+
+      </main>
+     
+  </div>
+  </body>
+  
+</html>

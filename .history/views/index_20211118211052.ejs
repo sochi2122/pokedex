@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+<title>Pokedex</title>
+    <!-- ============= FONTS ============= -->
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Montserrat:300,400,700&display=swap" rel="stylesheet">
+    <!-- ============= STYLES ============= -->
+    <link rel="stylesheet" href="/css/styles.css">
+
+
+  </head>
+  <body>
+    <div class="body-overlay">
+      <!-- ============ HEADER ============ -->
+        
+
+      
+      <!-- ============ MAIN ============ -->
+      <main>
+        <div>
+          <h1>pokemon()</h1>
+          <ul>
+            <% for(let i = 0; i < pokemon.20; i++) { %>
+              <li><a href="/pokemon/<%=i%>"><%= pokemon[i].id %></a></li>
+
+            </ul>
+            
+            <form action="/pokemon/<%=i; %>?_method=DELETE" method="POST"></form>
+
+            <form>
+
+            <input type="submit" value="DELETE" />
+          </form>
+        </li>
+        <% } %>
+      </ul>
+
+      <nav>
+        <a href="/pokemon/new">Create a New Pokemon</a>
+      </nav>
+    
+      <!-- ============ FOOTER ============ -->
+      <footer> 
+      
+      </footer>
+    </div>
+  </body>
+</html>

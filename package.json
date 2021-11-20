@@ -19,6 +19,7 @@
   "homepage": "https://github.com/sochi2122/pokedex#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "install": "^0.13.0",
     "method-override": "^3.0.0"
   }
 }
