@@ -1,5 +1,4 @@
 const pokemon = require("/models/pokemon.js")
 
 
-console.log(pokemon)
-
+console.log(pokemon.stats

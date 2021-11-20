@@ -33,11 +33,11 @@
 <td> HP:  <%= pokemon[i].stats.hp %> </td> 
 <td> Attack:  <%= pokemon[i].stats.attack %> </td> 
 
-<td> Defense:  <%= pokemon[i].stats.defense %> </td> 
+<td>   <%= pokemon[i].stats.defense %> </td> 
 
-<td>  Speed: <%= pokemon[i].stats.speed %> </td> 
+<td>   <%= pokemon[i].stats.speed %> </td> 
 
-<td> Move:  <%= pokemon[i].moves.level[0].name %> </td> 
+<td>   <%= pokemon[i].moves.level[0].name %> </td> 
 
 
 <td>    <form action="/pokemon/<%= i %>?_method=DELETE" method="POST">
