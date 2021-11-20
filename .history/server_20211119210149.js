@@ -22,11 +22,14 @@ app.get('/', (req, res) => {
 })
 
 
-app.get('/pokemon', (req, res) => {
-    res.render('index.ejs', { pokemon});
+app.get('/budget', (req, res) => {
+    res.render('index.ejs', { budget, sum});
 });
 
 
+app.get('/pokemon', (req, res) => {
+    res.render('index.ejs', pokemon );
+})
 
 
 app.get('/pokemon/new', (req, res) => {

@@ -22,20 +22,17 @@
     <% for(let i = 0; i < pokemon.length; i++) { %>
        
        <tr>
-           
-        <td>   <%= pokemon[i].id %> </td>
-
 <td>   <%= pokemon[i].name %> </td>
-<td>  <img src=<%= pokemon[i].image + ".jpg" %> /> </td>
+
 <td>   <%= pokemon[i].type %> </td>
 <td>   <%= pokemon[i].stats %> </td>
-<td>   <%= pokemon[i].moves %> </td>
+<td>   <%= pokemon[i].name %> </td>
 <td>   <%= pokemon[i].name %> </td>
 <td>    <form action="/pokemon/<%= i %>?_method=DELETE" method="POST">
         <input type="submit" value="DELETE" />
         </form> 
     </td>
-<td>   <a href="/pokemon/<%=i %>/edit" type="button" class="edit">Edit</a></td>
+<td>   <a href="/pokemon/<%=i %>/edit">Edit</a></td>
 
 
 

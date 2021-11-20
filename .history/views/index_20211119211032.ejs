@@ -22,11 +22,11 @@
     <% for(let i = 0; i < pokemon.length; i++) { %>
        
        <tr>
-           
+
         <td>   <%= pokemon[i].id %> </td>
 
 <td>   <%= pokemon[i].name %> </td>
-<td>  <img src=<%= pokemon[i].image + ".jpg" %> /> </td>
+<td>  <img src=<%= pokemon.image + ".jpg" %> /> </td>
 <td>   <%= pokemon[i].type %> </td>
 <td>   <%= pokemon[i].stats %> </td>
 <td>   <%= pokemon[i].moves %> </td>
